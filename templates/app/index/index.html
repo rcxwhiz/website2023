@@ -1,0 +1,21 @@
+{% extends 'app/base.html' %}
+
+{% block title %}Josh Bedwell{% endblock %}
+
+{% block content %}
+    <i class="bi bi-list mobile-nav-toggle d-xl-none" style="color: white"></i>
+
+    {% include 'app/index/header.html' %}
+
+    {% include 'app/index/hero.html' %}
+
+    <main id="main">
+        {% include 'app/index/about.html' %}
+
+        {% include 'app/index/resume.html' %}
+
+        {% include 'app/index/projects.html' %}
+    </main>
+
+    {% include 'app/index/footer.html' %}
+{% endblock %}
